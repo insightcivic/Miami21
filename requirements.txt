@@ -1,4 +1,5 @@
-faiss
+faiss-cpu
 sentence-transformers
 openai
+streamlit
 
