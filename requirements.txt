@@ -1,0 +1,4 @@
+faiss
+sentence-transformers
+openai
+
