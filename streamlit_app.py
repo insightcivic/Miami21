@@ -31,9 +31,9 @@ def generate_response(query, retrieved_chunks):
     messages = [
         {"role": "system", "content": "You are an assistant providing information based on the Miami 21 code."
                                       "Use the provided context to answer the user's question as hlepfully and accurately as possible."
-                                      "If the context lacks information on a specific question, respond with, "
+                                      "If the context does not contain the answer on a specific question, respond with, "
                                        "'I'm only able to answer based on the information in the Miami 21 Code.' "
-                                       "Do not guess or infer any details not in the context."},
+                                       },
         {"role": "user", "content": f"Context:\n{context}\n\nQuestion: {query}"}
     ]
     
