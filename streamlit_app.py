@@ -13,8 +13,8 @@ with open("miami21_chunked_with_overlap.txt", "r", encoding="utf-8") as file:
     chunked_sections_with_overlap = file.read().split("\n\n")
 
 # Load the embedding model
-# model = SentenceTransformer('all-MiniLM-L6-v2')
-model = SentenceTransformer('all-mpnet-base-v2')
+ model = SentenceTransformer('all-MiniLM-L6-v2')
+# model = SentenceTransformer('all-mpnet-base-v2')
 
 
 # Function to retrieve relevant chunks
