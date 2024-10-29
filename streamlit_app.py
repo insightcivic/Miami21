@@ -45,7 +45,7 @@ def generate_response(query, retrieved_chunks):
             model="gpt-4o-mini",  # Specify the latest model or correct endpoint
             messages=messages,
             max_tokens=500,
-            temperature=0.0
+            temperature=0.25
         )
         #response = openai.completions.chat(  # Tentative; update based on latest documentation
         #    model="gpt-4o mini",  # Specify the latest model or correct endpoint
