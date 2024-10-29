@@ -16,7 +16,7 @@ with open("miami21_chunked_with_overlap.txt", "r", encoding="utf-8") as file:
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Function to retrieve relevant chunks
-def retrieve_chunks(query, top_k=5):
+def retrieve_chunks(query, top_k=10):
     query_embedding = model.encode([query])
     distances, indices = index.search(np.array(query_embedding), top_k)
     retrieved_chunks = [chunked_sections_with_overlap[i] for i in indices[0]]
