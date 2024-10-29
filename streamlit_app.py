@@ -30,7 +30,7 @@ def generate_response(query, retrieved_chunks):
     # Create a structured message for the chat completion
     messages = [
         {"role": "system", "content": "You are an assistant providing information based on the Miami 21 code."
-                                      "Respond strictly based on the information provided in the context. "
+                                      "Use the provided context to answer the user's question as hlepfully and accurately as possible."
                                       "If the context lacks information on a specific question, respond with, "
                                        "'I'm only able to answer based on the information in the Miami 21 Code.' "
                                        "Do not guess or infer any details not in the context."},
